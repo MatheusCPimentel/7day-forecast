@@ -26,7 +26,7 @@ export function useForecast(): UseForecastReturn {
   });
 
   const fetchForecast = useCallback(async (address: string) => {
-    setState((prev) => ({ ...prev, loading: true, error: null }));
+    setState((prev) => ({ ...prev, loading: true }));
 
     const url = `/api/forecast?address=${encodeURIComponent(address)}`;
 

@@ -12,13 +12,13 @@ export default function Home() {
   const { data, address, loading, error, fetchForecast, clearError } =
     useForecast();
 
-  const hasToShowEmptyState = !data && !loading && !error;
+  const hasToShowEmptyState = !data && !error;
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
       {loading && <WeatherLoading />}
 
-      <div className="container mx-auto px-4 py-8">
+      <div className="min-h-screen flex flex-col justify-center container mx-auto px-4 py-8">
         <header className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-800 mb-2">
             7-Day Weather Forecast
@@ -46,7 +46,7 @@ export default function Home() {
           </div>
         )}
 
-        {!loading && data && (
+        {data && (
           <div>
             <div className="text-center mb-8">
               <h2 className="text-2xl font-semibold text-gray-800 mb-2">

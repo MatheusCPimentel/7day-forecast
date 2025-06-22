@@ -14,7 +14,7 @@ export function WeatherLoading() {
   );
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-50">
+    <div className="fixed inset-0 flex items-center justify-center z-50 bg-black/20 backdrop-blur-sm">
       <div className="text-center bg-white rounded-2xl p-8 shadow-2xl max-w-sm w-full mx-4">
         <div className="relative mb-6 flex justify-center items-center space-x-2">
           <Sun className="animate-spin-slow w-8 h-8 text-yellow-400" />
