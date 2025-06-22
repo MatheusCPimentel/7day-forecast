@@ -31,11 +31,12 @@ export function groupPeriodsByDay(
     }
   }
 
-  return dayGroups.slice(0, 7).map((group) => {
+  return dayGroups.slice(0, 7).map((group, index) => {
     const periodForName = group.dayPeriod || group.nightPeriod;
+    const isFirstDay = index === 0;
 
     return {
-      dayName: periodForName!.name,
+      dayName: isFirstDay ? "Today" : periodForName!.name,
       date: group.date,
       dayPeriod: group.dayPeriod,
       nightPeriod: group.nightPeriod,

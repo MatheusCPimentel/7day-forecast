@@ -102,7 +102,7 @@ describe("Forecast Utils", () => {
 
       expect(result).toHaveLength(1);
       expect(result[0]).toEqual({
-        dayName: "Tonight",
+        dayName: "Today",
         date: "Dec 1",
         dayPeriod: null,
         nightPeriod: periods[0],
@@ -121,12 +121,12 @@ describe("Forecast Utils", () => {
 
       expect(result).toHaveLength(2);
       expect(result[0].date).toBe("Dec 2");
-      expect(result[0].dayName).toBe("Saturday");
+      expect(result[0].dayName).toBe("Today"); // First group (index 0) is always "Today"
       expect(result[0].dayPeriod?.name).toBe("Saturday");
       expect(result[0].nightPeriod?.name).toBe("Saturday Night");
 
       expect(result[1].date).toBe("Dec 1");
-      expect(result[1].dayName).toBe("Today");
+      expect(result[1].dayName).toBe("Today"); // Second group uses the period name "Today"
       expect(result[1].dayPeriod?.name).toBe("Today");
       expect(result[1].nightPeriod?.name).toBe("Tonight");
     });
@@ -162,6 +162,29 @@ describe("Forecast Utils", () => {
     it("should handle empty periods array", () => {
       const result = groupPeriodsByDay([]);
       expect(result).toEqual([]);
+    });
+
+    it("should always set first day name to 'Today' regardless of period name", () => {
+      const testCases = [
+        "This Afternoon",
+        "This Morning",
+        "This Evening",
+        "Tonight",
+        "Today",
+        "Some Other Name",
+      ];
+
+      testCases.forEach((firstPeriodName) => {
+        const periods = [
+          createMockPeriod(firstPeriodName, true, "2023-12-01T06:00:00-05:00"),
+          createMockPeriod("Saturday", true, "2023-12-02T06:00:00-05:00"),
+        ];
+
+        const result = groupPeriodsByDay(periods);
+
+        expect(result[0].dayName).toBe("Today");
+        expect(result[1].dayName).toBe("Saturday");
+      });
     });
   });
 });
