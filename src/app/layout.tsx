@@ -8,8 +8,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "7 day Forecast",
-  description: "7 day Forecast",
+  title: "7-Day Weather Forecast | Get Detailed US Weather Predictions",
+  description:
+    "Get accurate 7-day weather forecasts for any US address. Powered by National Weather Service data with detailed temperature, wind, and precipitation predictions.",
 };
 
 export default function RootLayout({
