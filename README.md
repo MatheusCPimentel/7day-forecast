@@ -21,20 +21,35 @@ A modern, responsive weather forecast application built with Next.js that provid
 
 ## 📸 Screenshots
 
-### Desktop
+## Desktop Screens
 
-![Initial State](./public/screenshots/desktop/initial.png)
-![Loading State](./public/screenshots/desktop/loading.png)
-![Forecast Display](./public/screenshots/desktop/forecasts.png)
-![Error State](./public/screenshots/desktop/error.png)
+The app presents four main UI states on desktop:
 
-### Mobile
+| Initial State                                              | Loading State                                              |
+| ---------------------------------------------------------- | ---------------------------------------------------------- |
+| ![Initial State](./public/screenshots/desktop/initial.png) | ![Loading State](./public/screenshots/desktop/loading.png) |
 
-![Initial State](./public/screenshots/mobile/initial.png)
-![Loading State](./public/screenshots/mobile/loading.png)
-![Forecast Display 1](./public/screenshots/mobile/forecasts-01.png)
-![Forecast Display 2](./public/screenshots/mobile/forecasts-02.png)
-![Error State](./public/screenshots/mobile/error.png)
+| Forecast Display                                                | Error State                                            |
+| --------------------------------------------------------------- | ------------------------------------------------------ |
+| ![Forecast Display](./public/screenshots/desktop/forecasts.png) | ![Error State](./public/screenshots/desktop/error.png) |
+
+---
+
+## Mobile Screens
+
+The mobile layout adapts to smaller screens while maintaining the same UI flow:
+
+| Initial State                                             | Loading State                                             |
+| --------------------------------------------------------- | --------------------------------------------------------- |
+| ![Initial State](./public/screenshots/mobile/initial.png) | ![Loading State](./public/screenshots/mobile/loading.png) |
+
+| Forecast 1                                                          | Forecast 2                                                          |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| ![Forecast Display 1](./public/screenshots/mobile/forecasts-01.png) | ![Forecast Display 2](./public/screenshots/mobile/forecasts-02.png) |
+
+| Error State                                           |
+| ----------------------------------------------------- |
+| ![Error State](./public/screenshots/mobile/error.png) |
 
 ## 🚀 Quick Start
 
