@@ -19,6 +19,23 @@ A modern, responsive weather forecast application built with Next.js that provid
 - **🎯 Working Examples**: Pre-loaded example addresses for quick testing
 - **🧪 Comprehensive Testing**: 100% test coverage with Jest and React Testing Library
 
+## 📸 Screenshots
+
+### Desktop
+
+![Initial State](./public/desktop/initial.png)
+![Loading State](./public/desktop/loading.png)
+![Forecast Display](./public/desktop/forecasts.png)
+![Error State](./public/desktop/error.png)
+
+### Mobile
+
+![Initial State](./public/mobile/initial.png)
+![Loading State](./public/mobile/loading.png)
+![Forecast Display 1](./public/mobile/forecasts-01.png)
+![Forecast Display 2](./public/mobile/forecasts-02.png)
+![Error State](./public/mobile/error.png)
+
 ## 🚀 Quick Start
 
 ### Prerequisites
