@@ -68,28 +68,28 @@ A modern, responsive weather forecast application built with Next.js that provid
 
 ```
 src/
-├── app/                    # Next.js App Router
-│   ├── api/forecast/      # Weather API endpoints
-│   │   ├── route.ts       # HTTP request handling
-│   │   ├── services.ts    # Business logic & external APIs
-│   │   ├── utils.ts       # Data transformation utilities
-│   │   └── __tests__/     # API tests
-│   ├── globals.css        # Global styles
-│   ├── layout.tsx         # Root layout component
-│   └── page.tsx           # Home page component
-├── components/            # Reusable UI components
-│   ├── AddressForm.tsx    # Address input form
-│   ├── WeatherCard.tsx    # Weather forecast display
-│   ├── ErrorDisplay.tsx   # Error state handling
-│   ├── EmptyState.tsx     # Initial empty state
-│   ├── WeatherLoading.tsx # Loading state
-│   ├── WorkingExamples.tsx# Example addresses
-│   └── __tests__/         # Component tests
-├── hooks/                 # Custom React hooks
-│   ├── useForecast.ts     # Weather data management
-│   └── __tests__/         # Hook tests
-└── types/                 # TypeScript type definitions
-    └── forecast.ts        # Weather data interfaces
+├── app/                     # Next.js App Router
+│   ├── api/forecast/        # Weather API endpoints
+│   │   ├── route.ts         # HTTP request handling
+│   │   ├── services.ts      # Business logic & external APIs
+│   │   ├── utils.ts         # Data transformation utilities
+│   │   └── __tests__/       # API tests
+│   ├── globals.css          # Global styles
+│   ├── layout.tsx           # Root layout component
+│   └── page.tsx             # Home page component
+├── components/              # Reusable UI components
+│   ├── AddressForm.tsx      # Address input form
+│   ├── WeatherCard.tsx      # Weather forecast display
+│   ├── ErrorDisplay.tsx     # Error state handling
+│   ├── EmptyState.tsx       # Initial empty state
+│   ├── WeatherLoading.tsx   # Loading state
+│   ├── WorkingExamples.tsx  # Example addresses
+│   └── __tests__/           # Component tests
+├── hooks/                   # Custom React hooks
+│   ├── useForecast.ts       # Weather data management
+│   └── __tests__/           # Hook tests
+└── types/                   # TypeScript type definitions
+    └── forecast.ts          # Weather data interfaces
 ```
 
 ### Key Components
@@ -104,7 +104,10 @@ src/
 
 - **WeatherCard**: Displays day/night weather periods with beautiful styling
 - **AddressForm**: Handles user input with validation
-- **Error States**: Comprehensive error handling with user-friendly messages
+- **EmptyState**: Displays a message when no forecast is available
+- **ErrorDisplay**: Displays an error message when the forecast is not available
+- **WeatherLoading**: Displays a loading state when the forecast is loading
+- **WorkingExamples**: Displays example addresses for quick testing
 
 #### 🔗 **Custom Hooks**
 
