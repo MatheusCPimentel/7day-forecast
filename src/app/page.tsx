@@ -67,7 +67,7 @@ export default function Home() {
         )}
 
         {hasToShowEmptyState && (
-          <div className="p-12 h-[50vh] flex items-center justify-center">
+          <div className="p-12 h-[65vh] flex items-center justify-center">
             <EmptyState />
           </div>
         )}
