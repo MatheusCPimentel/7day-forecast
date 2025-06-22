@@ -21,7 +21,7 @@ A modern, responsive weather forecast application built with Next.js that provid
 
 ## 📸 Screenshots
 
-## Desktop Screens
+### Desktop Screens
 
 The app presents four main UI states on desktop:
 
@@ -35,7 +35,7 @@ The app presents four main UI states on desktop:
 
 ---
 
-## Mobile Screens
+### Mobile Screens
 
 The mobile layout adapts to smaller screens while maintaining the same UI flow:
 
