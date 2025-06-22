@@ -23,18 +23,18 @@ A modern, responsive weather forecast application built with Next.js that provid
 
 ### Desktop
 
-![Initial State](./public/desktop/initial.png)
-![Loading State](./public/desktop/loading.png)
-![Forecast Display](./public/desktop/forecasts.png)
-![Error State](./public/desktop/error.png)
+![Initial State](./public/screenshots/desktop/initial.png)
+![Loading State](./public/screenshots/desktop/loading.png)
+![Forecast Display](./public/screenshots/desktop/forecasts.png)
+![Error State](./public/screenshots/desktop/error.png)
 
 ### Mobile
 
-![Initial State](./public/mobile/initial.png)
-![Loading State](./public/mobile/loading.png)
-![Forecast Display 1](./public/mobile/forecasts-01.png)
-![Forecast Display 2](./public/mobile/forecasts-02.png)
-![Error State](./public/mobile/error.png)
+![Initial State](./public/screenshots/mobile/initial.png)
+![Loading State](./public/screenshots/mobile/loading.png)
+![Forecast Display 1](./public/screenshots/mobile/forecasts-01.png)
+![Forecast Display 2](./public/screenshots/mobile/forecasts-02.png)
+![Error State](./public/screenshots/mobile/error.png)
 
 ## 🚀 Quick Start
 
