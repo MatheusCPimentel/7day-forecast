@@ -168,7 +168,7 @@ npm start
 - No additional environment variables required
 - Uses public APIs (no API keys needed)
 
-## 🙏 Acknowledgments
+## 📖 Acknowledgments
 
 - **National Weather Service** for providing free, accurate weather data
 - **US Census Bureau** for geocoding services
